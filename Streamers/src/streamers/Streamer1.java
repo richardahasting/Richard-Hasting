@@ -39,6 +39,7 @@ public class Streamer1 {
         System.out.println(count + "\n" + newList);
   
         newList.clear();
+        // the new way
         foo = (int) dataList.parallelStream().filter(l -> l.length() == 5)
                 .count();
         // the new way
